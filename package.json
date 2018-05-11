@@ -1,12 +1,13 @@
 {
-  "name": "server",
+  "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "FriendFinder",
-  "main": "index.js",
+  "description": "An app that helps you find a close match, based on a survey",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Chadwick",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
