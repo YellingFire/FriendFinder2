@@ -303,10 +303,17 @@
             //condense dot notation to make easier calls in jquery
             var bestyName = data[userIndex].name;
             var bestyPicture = data[userIndex].photo;
+            // var viewPicture = bestyPicture.attr("width", "100%");
+
+
 
             // jquery to post to modal upon success of best match
             $("#match-name").text(bestyName);
-            $("#match-img").attr("src", bestyPicture);
+            $("#match-img").attr({
+              src: bestyPicture,
+              width: "100%",
+              height: "100%"
+            });
             $("#besty-modal").modal("toggle");
             // console.log("Here is the bestyPicture: " + bestyPicture)
             
